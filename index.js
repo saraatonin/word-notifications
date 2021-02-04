@@ -61,7 +61,7 @@ export default class WordNotifications extends Plugin {
 				image: AvatarModule.getUserAvatarURL(message.author).replace("?size=128", "?size=32"),
 				buttons: [
 					{
-						text: "Jump to Channel",
+						text: "Jump to message",
 						color: 'green',
 						onClick: () => {
 							this.goToMessage(guild?.id, channel.id, message.id);
